@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 5 of html apna college lecture</title>
+</head>
+
+<body>
+    <!-- forms in html tag used is form tag-->
+    <header>
+
+    </header>
+    <main>
+        <form action="/action.php">
+                 <!-- ignore the action tag part for now tho it is used to process the file or whatever in the backend or frontend-->
+                <!-- input tag-->
+            <input type="text" placeholder="Enter username">
+            <br>
+                 <!-- first we write the input tag then the type of input we need then we specify weather it is text or smthn else, then we use placeholder to display it in the place of where we ned the input-->
+            <input type="password" placeholder="Enter Password">
+            <br>
+            <br>
+                <!-- here we provided the type as password so the user will see dots in place of the text for security reasons-->
+        
+        <!-- labels-->    
+        <!-- radio buttons are the buttons where we can only choose once like in mcqs we are given four options but we can click on em once without any choice or any pop ups-->
+        
+        <input type="radio" value="Class XI" name="Class"> Class XI
+        <input type="radio" value="Class XII" name="Class"> Class XII
+        <br>
+                <!-- here we used 2 attributes instead of placeholder cuz here we don't need text input now it's a good practice to use name(outside the tag) and value as same cuz it's seamless for backend users as well-->
+
+         <!-- now if we click on the radio button's name it won't click in that case we use here labels where it can make it whole clickable-->
+         
+        <label for="101">
+            <input type="radio" value="Class XI" name="Class" id="101"> Class XI
+        </label> 
+        <label for="10">
+            <input type="radio" value="Class XII" name="Class" id="10"> Class XII
+            <br>
+            <br>
+        <!-- the checkbox thing i'm ignoring it for now-->
+
+        <!-- select tag-->
+        <!-- select used to have a drop down menu of sort and below we used value to give em the options-->
+        Select your city
+        <select name="city">
+            <option value="Delhi">Delhi </option>
+            <option value="Noida">Noida </option>
+            <option value="Gurgaon">Gurgaon </option>
+        </select>
+
+        <!-- textbox tag used when we need to input some lines or para form user like feedback form or smthn -->
+            <br>
+            <br>
+        <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" rows="5"> Feedback </textarea>
+        <!-- similar to text input -->
+        <br>
+        
+        <!-- submit tag to submit the entire form-->
+        <input type="submit" value="submit">
+            </form>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
